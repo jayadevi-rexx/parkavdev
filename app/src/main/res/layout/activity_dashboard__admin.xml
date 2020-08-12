@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Dashboard_Admin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#000">
+
+            <ImageView
+                android:id="@+id/__page_dashboard___1__ic_view_headline_24px"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/ic_navigation" />
+
+            <TextView
+                android:id="@+id/txtToolBarCaptionName"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/__page_dashboard___1__ic_view_headline_24px"
+                android:text="Dashboard"
+                android:textColor="#fff"/>
+
+
+
+
+            <Chronometer
+                android:id="@+id/dashboard_timer"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_toLeftOf="@+id/NotfificationRelativeLayout"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:visibility="invisible" />
+            <Button
+                android:id="@+id/dashboard_checkout"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/NotfificationRelativeLayout"
+                android:textColor="#ffffff"
+                android:background="#008577"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:text="Checkout"
+                android:gravity="center"
+                android:visibility="invisible" />
+            <RelativeLayout
+                android:id="@+id/NotfificationRelativeLayout"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:id="@+id/dashboard_profile"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ellipse_2_shape"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/content_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/linear2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="right">
+                            <TextView
+                                android:id="@+id/today"
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Today"
+                                android:textColor="#fff"
+                                android:background="@drawable/rectangle_0_shape"/>
+                            <TextView
+                                android:id="@+id/thisweek"
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="This Week"
+                                android:textColor="#fff"
+                                android:background="@drawable/rectangle_1_shape"/>
+                            <TextView
+                                android:id="@+id/thismonth"
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="This Month"
+                                android:textColor="#ffffff"
+                                android:background="@drawable/rectangle_2_shape"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="18/09/2020"
+                            android:gravity="right"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/hello__"
+                            android:textSize="35sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:layout_marginLeft="13dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hello___string"
+                            android:layout_width="wrap_content" />
+                        <TextView android:id="@+id/employee_name"
+                            android:textSize="29sp"
+                            android:textColor="@color/monthly_target_color"
+                            android:layout_marginLeft="13dp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Admin Name"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_below="@+id/linear3"
+                        android:layout_marginTop="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Profit Details"
+                                android:textStyle="bold"
+                                android:gravity="center"/>
+                            <ProgressBar
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/circularProgressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:indeterminate="false"
+                                android:layout_centerVertical="true"
+                                android:max="100"
+                                android:progress="80"
+                                android:progressDrawable="@drawable/circular"
+                                android:secondaryProgress="60" />
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/circle_0_shape" />
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Overall Amount"
+                                    />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/circle_1_shape" />
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Collected Amount"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/circle_2_shape" />
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Profit"
+                                    />
+                            </LinearLayout>
+                            <Button
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/dashboard_today_task"
+                                android:layout_width="158dp"
+                                android:layout_height="49dp"
+                                android:layout_weight="1"
+                                android:text="Employee List"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:background="@drawable/rectangle_3_shape"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginTop="20dp"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Stock Details"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                />
+                            <ProgressBar
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/circularProgressbar2"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:indeterminate="false"
+
+                                android:max="100"
+                                android:progress="50"
+                                android:progressDrawable="@drawable/circular"
+                                android:secondaryProgress="50" />
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/circle_0_shape" />
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Overall Stocks"
+                                    />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/circle_1_shape" />
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Sold"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/circle_2_shape" />
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Remaining"
+                                    />
+                            </LinearLayout>
+                            <Button
+                                android:layout_marginTop="20dp"
+                                android:layout_width="158dp"
+                                android:layout_height="49dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Track Employee"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:background="@drawable/rectangle_3_shape"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/dashboard_bootom_button"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_bottombutton" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
